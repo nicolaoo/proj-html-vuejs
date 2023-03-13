@@ -1,8 +1,10 @@
 <script>
+import store from '../store'
+
 export default {
     data() {
         return {
-
+            store
         }
     }
 }
@@ -38,42 +40,38 @@ export default {
                 </figure>
             </div>
         </div>
-        <div class="container">
-            <div class="companys">
-                <figure>
-                    <img src="/land/img/amazon.svg" alt="">
-                </figure>
-                <figure>
-                    <img src="/land/img/amazon.svg" alt="">
-                </figure>
-                <figure>
-                    <img src="/land/img/amazon.svg" alt="">
-                </figure>
-                <figure>
-                    <img src="/land/img/amazon.svg" alt="">
-                </figure>
-                <figure>
-                    <img src="/land/img/amazon.svg" alt="">
-                </figure>
-                <figure>
-                    <img src="/land/img/amazon.svg" alt="">
-                </figure>
+        <div class="dev-company">
+            <div class="container">
+                <div class="companys">
+                    <figure v-for="(company, i) in store.listCompanys" :key="i">
+                        <img :src="company" alt="">
+                    </figure>
+                </div>
             </div>
         </div>
     </section>
-</template>
+</template>div
 
 <style lang="scss" scoped>
 @use '../style/variables.scss' as *;
 
-.development {
+.development,
+.dev-company {
     background-color: $sfondo-bg;
+}
+
+.dev-company {
+    border-top: 1px solid rgb(226, 226, 226);
 }
 
 .companys {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap: 10px;
+
+    img {
+        padding: 50px;
+    }
 }
 
 .develop-doc {
