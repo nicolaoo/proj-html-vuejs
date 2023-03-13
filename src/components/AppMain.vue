@@ -9,8 +9,126 @@ export default {
 
 </script>
 
-<template></template>
+<template>
+    <section class="development">
+        <div class="container">
+            <div class="develop-doc">
+                <div class="document">
+                    <button class="dev-btn">
+                        Development
+                    </button>
+                    <h1>A Complete Developer Toolste</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, quos.
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, et.
+
+                    </p>
+                    <span>
+                        <button class="btn start-btn">
+                            Get Sarted
+                        </button>
+                        <button class="btn doc-btn">
+                            Documentation
+                        </button>
+                    </span>
+                    <p>Current Version: v2.6.0</p>
+                </div>
+                <figure>
+                    <img src="/land/img/about.png" alt="">
+                </figure>
+            </div>
+        </div>
+        <div class="container">
+            <div class="companys">
+                <figure>
+                    <img src="/land/img/amazon.svg" alt="">
+                </figure>
+                <figure>
+                    <img src="/land/img/amazon.svg" alt="">
+                </figure>
+                <figure>
+                    <img src="/land/img/amazon.svg" alt="">
+                </figure>
+                <figure>
+                    <img src="/land/img/amazon.svg" alt="">
+                </figure>
+                <figure>
+                    <img src="/land/img/amazon.svg" alt="">
+                </figure>
+                <figure>
+                    <img src="/land/img/amazon.svg" alt="">
+                </figure>
+            </div>
+        </div>
+    </section>
+</template>
 
 <style lang="scss" scoped>
 @use '../style/variables.scss' as *;
+
+.development {
+    background-color: $sfondo-bg;
+}
+
+.companys {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+}
+
+.develop-doc {
+    display: flex;
+    align-items: center;
+    padding: 100px 0;
+
+
+    figure {
+        flex-basis: 80%;
+    }
+
+    .document {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+
+        h1 {
+            font-size: 40px;
+        }
+
+        p {
+            color: $text-grey;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .dev-btn {
+            border-radius: 8px;
+            padding: 2px 5px;
+            background-color: $bg-icon-head;
+            color: $text-bg-purple;
+            font-weight: 600;
+            font-size: 10px;
+        }
+
+        .btn {
+            border-radius: 5px;
+            padding: 8px 18px;
+            font-weight: 500;
+        }
+
+        .start-btn {
+            background-color: $text-purple;
+            color: white;
+        }
+
+        .doc-btn {
+            background-color: white;
+            color: $text-purple;
+            border: 1px solid $text-purple;
+            margin-left: 15px;
+        }
+    }
+}
 </style>
