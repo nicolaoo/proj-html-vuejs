@@ -119,17 +119,18 @@ export default {
                             </ul>
                         </div>
                     </div>
+
+                    <ul class="check-out_table">
+                        <li>
+                            <i class="fa-regular fa-circle-check"></i>
+                            Work with any team
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-circle-check"></i>
+                            Organize your data
+                        </li>
+                    </ul>
                 </div>
-                <ul class="check-out_table">
-                    <li>
-                        <i class="fa-regular fa-circle-check"></i>
-                        Work with any team
-                    </li>
-                    <li>
-                        <i class="fa-regular fa-circle-check"></i>
-                        Organize your data
-                    </li>
-                </ul>
             </div>
         </div>
 
@@ -234,7 +235,6 @@ export default {
 .table-nav {
     display: flex;
     flex-direction: column;
-    align-items: center;
     padding-top: 50px;
 
     .row-table {
@@ -242,6 +242,7 @@ export default {
         padding: 20px 30px;
         color: white;
         border-radius: 6px;
+        margin: 0 auto;
 
         .choose_btn {
             border: 1px solid rgb(33, 33, 33);
@@ -291,7 +292,9 @@ export default {
     display: flex;
     gap: 40px;
     padding-top: 25px;
-    margin-left: 205px;
+    margin-left: 273px;
+    align-items: center;
+    justify-content: flex-start;
 
     i {
         color: $text-green;

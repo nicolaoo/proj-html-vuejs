@@ -1,6 +1,7 @@
 <script>
 import store from '../store'
 import Features from './Features.vue'
+import ChartDocument from './ChartDocument.vue'
 
 export default {
     data() {
@@ -9,6 +10,7 @@ export default {
         }
     }, components: {
         Features,
+        ChartDocument,
     }
 }
 
@@ -56,6 +58,10 @@ export default {
 
     <section class="features">
         <Features />
+    </section>
+
+    <section class="chart-document">
+        <ChartDocument />
     </section>
 </template>
 

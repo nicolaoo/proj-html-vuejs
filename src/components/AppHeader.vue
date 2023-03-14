@@ -47,7 +47,7 @@ export default {
             <i class="fa-solid fa-magnifying-glass"></i>
           </span>
           <button><i class="icon-head fa-brands fa-github"></i></button>
-          <button><i class="icon-head fa-solid fa-chart-gantt"></i></button>
+          <button><i class="fa-brands fa-stack-overflow"></i></button>
           <button><i class="icon-head fa-regular fa-user"></i></button>
         </div>
       </div>
