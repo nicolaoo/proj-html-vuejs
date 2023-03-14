@@ -65,9 +65,107 @@ export default {
                             Enhanced Security
                         </li>
                     </ul>
-                    <button class="btn-buy">
-                        Buy Now
+                    <div class="content-btn">
+                        <button class="btn-buy">
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card best-price">
+                    <figure>
+                        <img class="bg-price" src="/land/img/Vector2.svg" alt="">
+                        <img class="text-price" src="/land/img/Frame1.png" alt="">
+                    </figure>
+                    <button class="level-rates">
+                        Business
                     </button>
+                    <div class="price">
+                        <h4>
+                            $39.00
+
+                        </h4>
+                        <p>
+
+                            Per Month
+                        </p>
+                    </div>
+                    <p>
+                        All the basics for businesses that are just getting started.
+                    </p>
+                    <ul>
+                        <li>
+                            <i class="fa-regular fa-circle-check"></i>
+                            Full Access
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-circle-check"></i>
+                            Enhanced Security
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-circle-check"></i>
+                            Source Files
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-circle-check"></i>
+                            1 Domain free
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-circle-check"></i>
+                            Enhanced Security
+                        </li>
+                    </ul>
+                    <div class="content-btn">
+                        <button class="btn-buy">
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <button class="level-rates">
+                        Enterprise
+                    </button>
+                    <div class="price">
+                        <h4>
+                            $79.00
+
+                        </h4>
+                        <p>
+
+                            Per Month
+                        </p>
+                    </div>
+                    <p>
+                        All the basics for businesses that are just getting started.
+                    </p>
+                    <ul>
+                        <li>
+                            <i class="fa-regular fa-circle-check"></i>
+                            Full Access
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-circle-check"></i>
+                            Enhanced Security
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-circle-check"></i>
+                            Source Files
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-circle-check"></i>
+                            1 Domain free
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-circle-check"></i>
+                            Enhanced Security
+                        </li>
+                    </ul>
+                    <div class="content-btn">
+                        <button class="btn-buy">
+                            Buy Now
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -120,13 +218,32 @@ export default {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 900px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.best-price {
+    position: relative;
+
+    .bg-price {
+        position: absolute;
+        right: -2px;
+        top: -2px;
+    }
+
+    .text-price {
+        position: absolute;
+        right: 11px;
+        top: 15px;
+    }
 }
 
 .card {
     border: 2px solid $sfondo-bg;
-    padding: 10px;
-    border-radius: 5px;
+    padding: 20px;
+    border-radius: 10px;
     box-shadow: 0 1px $text-grey;
 
     .level-rates {
@@ -185,12 +302,19 @@ export default {
 
 }
 
-.btn-buy {
-    padding: 8px 70px;
-    margin: 12px 0;
-    background-color: $text-purple;
-    color: white;
-    border-radius: 6px;
+.content-btn {
+
+    display: flex;
+    justify-content: stretch;
+
+    .btn-buy {
+        padding: 8px;
+        margin: 12px 0;
+        background-color: $text-purple;
+        color: white;
+        border-radius: 6px;
+        flex-grow: 1;
+    }
 }
 
 .row-mail {

@@ -8,7 +8,8 @@ const store = reactive({
         paypal: '/land/img/paypal.svg',
         shopify: '/land/img/shopify.svg',
         spotify: '/land/img/spotify.svg',
-    }
+    },
+
 
 })
 
