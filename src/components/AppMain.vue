@@ -18,31 +18,33 @@ export default {
 
 <template>
     <section class="development">
-        <div class="container">
-            <div class="develop-doc">
-                <div class="document">
-                    <button class="dev-btn">
-                        Development
-                    </button>
-                    <h1>A Complete Developer Toolste</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, quos.
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, et.
+        <div class="bg-grey-dev">
+            <div class="container">
+                <div class="develop-doc">
+                    <div class="document">
+                        <button class="dev-btn">
+                            Development
+                        </button>
+                        <h1>A Complete Developer Toolste</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, quos.
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, et.
 
-                    </p>
-                    <span>
-                        <button class="btn start-btn">
-                            Get Sarted
-                        </button>
-                        <button class="btn doc-btn">
-                            Documentation
-                        </button>
-                    </span>
-                    <p>Current Version: v2.6.0</p>
+                        </p>
+                        <span>
+                            <button class="btn start-btn">
+                                Get Sarted
+                            </button>
+                            <button class="btn doc-btn">
+                                Documentation
+                            </button>
+                        </span>
+                        <p>Current Version: v2.6.0</p>
+                    </div>
+                    <figure>
+                        <img src="/land/img/about.png" alt="">
+                    </figure>
                 </div>
-                <figure>
-                    <img src="/land/img/about.png" alt="">
-                </figure>
             </div>
         </div>
         <div class="dev-company">
@@ -68,14 +70,16 @@ export default {
 <style lang="scss" scoped>
 @use '../style/variables.scss' as *;
 
-.development,
-.dev-company {
+.bg-grey-dev {
     background-color: $sfondo-bg;
-
 }
 
 .dev-company {
     border-top: 1px solid rgb(226, 226, 226);
+    background-image: url('/land/img/Vector1.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .companys {
@@ -93,6 +97,8 @@ export default {
     display: flex;
     align-items: center;
     padding: 100px 0;
+    gap: 100px;
+
 
 
     figure {
