@@ -1,11 +1,14 @@
 <script>
 import store from '../store'
+import Features from './Features.vue'
 
 export default {
     data() {
         return {
             store
         }
+    }, components: {
+        Features,
     }
 }
 
@@ -50,7 +53,11 @@ export default {
             </div>
         </div>
     </section>
-</template>div
+
+    <section class="features">
+        <Features />
+    </section>
+</template>
 
 <style lang="scss" scoped>
 @use '../style/variables.scss' as *;
@@ -58,6 +65,7 @@ export default {
 .development,
 .dev-company {
     background-color: $sfondo-bg;
+
 }
 
 .dev-company {
@@ -66,11 +74,12 @@ export default {
 
 .companys {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(7, 1fr);
     gap: 10px;
 
+
     img {
-        padding: 50px;
+        padding: 40px;
     }
 }
 
@@ -81,7 +90,7 @@ export default {
 
 
     figure {
-        flex-basis: 80%;
+        flex-basis: 50%;
     }
 
     .document {
@@ -112,7 +121,7 @@ export default {
 
         .btn {
             border-radius: 5px;
-            padding: 8px 18px;
+            padding: 10px 20px;
             font-weight: 500;
         }
 
