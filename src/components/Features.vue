@@ -85,7 +85,53 @@ export default {
             </div>
         </div>
         <div class="quick-start">
+            <p>Quickstart</p>
+            <h3>Awesome isn't it? Let's dive in!</h3>
+            <p>
+                Start working with <a href="#">Landrik</a> that can provide everything you need
+                to generate awareness, drive traffic,connect.
+            </p>
 
+            <div>
+                <div class="table-nav">
+                    <div class="row-table">
+                        <div>
+
+                            <ul class="choose_btn">
+                                <button class="active">
+                                    npm
+                                </button>
+                                <button>
+                                    nuget
+                                </button>
+                                <button>
+                                    spm
+                                </button>
+                                <button class="end-btn-table">
+                                    github
+                                </button>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <ul>
+                                <li><span>$</span> npm install</li>
+                                <li><span>-g</span> claps.js</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <ul>
+                    <li>
+                        <i class="fa-regular fa-circle-check"></i>
+                        Work with any team
+                    </li>
+                    <li>
+                        <i class="fa-regular fa-circle-check"></i>
+                        Organize your data
+                    </li>
+                </ul>
+            </div>
         </div>
 
     </div>
@@ -96,7 +142,7 @@ export default {
 
 .key {
     display: flex;
-    padding: 100px 0;
+    padding: 50px 0;
     flex-direction: column;
     gap: 20px;
 
@@ -153,6 +199,55 @@ export default {
                     padding-left: 5px;
                 }
             }
+        }
+    }
+}
+
+// QUIK START SECTION
+
+.quick-start {
+    text-align: center;
+    padding: 50px 0;
+
+    h3 {
+        padding: 20px 0;
+    }
+}
+
+.table-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+
+    .row-table {
+        background-color: #000000;
+        padding: 20px 30px;
+        color: white;
+        border-radius: 6px;
+
+        .choose_btn {
+            border: 1px solid rgb(33, 33, 33);
+            border-radius: 6px;
+
+            button {
+                background-color: rgb(25, 25, 25);
+                padding: 10px 50px;
+                color: $text-grey-light ;
+            }
+
+            .active {
+                background-color: rgb(0, 0, 0);
+                border-bottom-left-radius: 6px;
+                border-top-left-radius: 6px;
+                color: white;
+            }
+
+        }
+
+        .end-btn-table {
+            border-bottom-right-radius: 6px;
+            border-top-right-radius: 6px;
         }
     }
 }
