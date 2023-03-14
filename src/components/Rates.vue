@@ -71,6 +71,24 @@ export default {
                 </div>
             </div>
         </div>
+
+        <div class="row-mail">
+            <h3>
+                Our rates for developer from landrik team
+
+            </h3>
+            <p>
+                Start working with <a href="#">Landrik</a> that can provide everything you need
+                to generate awareness, drive traffic,connect.
+            </p>
+            <div class="mail-user">
+
+                <input type="text" placeholder="Email Address">
+                <button class="btn-buy">
+                    Get Started
+                </button>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -173,5 +191,50 @@ export default {
     background-color: $text-purple;
     color: white;
     border-radius: 6px;
+}
+
+.row-mail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 50px 0;
+
+    h3 {
+        font-weight: 800;
+    }
+
+    p {
+        max-width: 600px;
+        color: $text-grey;
+        text-align: center;
+        padding-bottom: 20px;
+
+        a {
+            color: $text-purple;
+            font-weight: 800;
+        }
+    }
+}
+
+.mail-user {
+    position: relative;
+
+    button {
+        padding: 10px 15px;
+        background-color: #2f55d4;
+        color: white;
+        border-radius: 15px;
+        position: absolute;
+        right: 1px;
+        top: -10px;
+        bottom: -10px;
+    }
+
+    input {
+        padding: 10px 300px 10px 10px;
+        border: 1px solid $bg-icon-head;
+        border-radius: 30px;
+    }
 }
 </style>
