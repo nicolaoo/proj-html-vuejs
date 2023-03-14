@@ -85,7 +85,7 @@ export default {
             </div>
         </div>
         <div class="quick-start">
-            <p>Quickstart</p>
+            <p class="top-title">Quickstart</p>
             <h3>Awesome isn't it? Let's dive in!</h3>
             <p>
                 Start working with <a href="#">Landrik</a> that can provide everything you need
@@ -95,8 +95,7 @@ export default {
             <div>
                 <div class="table-nav">
                     <div class="row-table">
-                        <div>
-
+                        <div class="top-table">
                             <ul class="choose_btn">
                                 <button class="active">
                                     npm
@@ -113,7 +112,7 @@ export default {
                             </ul>
                         </div>
 
-                        <div>
+                        <div class="bottom-table">
                             <ul>
                                 <li><span>$</span> npm install</li>
                                 <li><span>-g</span> claps.js</li>
@@ -121,7 +120,7 @@ export default {
                         </div>
                     </div>
                 </div>
-                <ul>
+                <ul class="check-out_table">
                     <li>
                         <i class="fa-regular fa-circle-check"></i>
                         Work with any team
@@ -211,6 +210,24 @@ export default {
 
     h3 {
         padding: 20px 0;
+        font-size: 25px;
+    }
+
+    .top-title {
+        color: $text-purple;
+        font-weight: 700;
+        padding: 0;
+    }
+
+    p {
+        max-width: 600px;
+        color: $text-grey;
+        margin: 0 auto;
+
+        a {
+            color: $text-purple;
+            font-weight: 800;
+        }
     }
 }
 
@@ -249,6 +266,36 @@ export default {
             border-bottom-right-radius: 6px;
             border-top-right-radius: 6px;
         }
+    }
+}
+
+.bottom-table {
+    ul {
+        display: flex;
+        gap: 15px;
+        padding-top: 12px;
+
+        li {
+            color: $text-grey;
+
+            span {
+                color: $text-green;
+            }
+        }
+    }
+
+
+}
+
+.check-out_table {
+    display: flex;
+    gap: 40px;
+    padding-top: 25px;
+    margin-left: 205px;
+
+    i {
+        color: $text-green;
+        padding-right: 5px;
     }
 }
 </style>
