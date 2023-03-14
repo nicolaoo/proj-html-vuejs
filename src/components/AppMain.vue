@@ -2,6 +2,7 @@
 import store from '../store'
 import Features from './Features.vue'
 import ChartDocument from './ChartDocument.vue'
+import Rates from './Rates.vue'
 
 export default {
     data() {
@@ -11,6 +12,7 @@ export default {
     }, components: {
         Features,
         ChartDocument,
+        Rates,
     }
 }
 
@@ -65,10 +67,18 @@ export default {
     <section class="chart-document">
         <ChartDocument />
     </section>
+
+    <section class="rates-developer">
+        <Rates />
+    </section>
 </template>
 
 <style lang="scss" scoped>
 @use '../style/variables.scss' as *;
+
+.rates-developer {
+    padding: 50px 0;
+}
 
 .bg-grey-dev {
     background-color: $sfondo-bg;
