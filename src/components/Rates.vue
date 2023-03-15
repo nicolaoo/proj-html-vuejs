@@ -44,25 +44,9 @@ export default {
                         All the basics for businesses that are just getting started.
                     </p>
                     <ul>
-                        <li>
+                        <li v-for="(el, i) in store.listRates" :key="i">
                             <i class="fa-regular fa-circle-check"></i>
-                            Full Access
-                        </li>
-                        <li>
-                            <i class="fa-regular fa-circle-check"></i>
-                            Enhanced Security
-                        </li>
-                        <li>
-                            <i class="fa-regular fa-circle-check"></i>
-                            Source Files
-                        </li>
-                        <li>
-                            <i class="fa-regular fa-circle-check"></i>
-                            1 Domain free
-                        </li>
-                        <li>
-                            <i class="fa-regular fa-circle-check"></i>
-                            Enhanced Security
+                            {{ el }}
                         </li>
                     </ul>
                     <div class="content-btn">
@@ -97,25 +81,9 @@ export default {
                         All the basics for businesses that are just getting started.
                     </p>
                     <ul>
-                        <li>
+                        <li v-for="(el, i) in store.listRates" :key="i">
                             <i class="fa-regular fa-circle-check"></i>
-                            Full Access
-                        </li>
-                        <li>
-                            <i class="fa-regular fa-circle-check"></i>
-                            Enhanced Security
-                        </li>
-                        <li>
-                            <i class="fa-regular fa-circle-check"></i>
-                            Source Files
-                        </li>
-                        <li>
-                            <i class="fa-regular fa-circle-check"></i>
-                            1 Domain free
-                        </li>
-                        <li>
-                            <i class="fa-regular fa-circle-check"></i>
-                            Enhanced Security
+                            {{ el }}
                         </li>
                     </ul>
                     <div class="content-btn">
@@ -146,25 +114,9 @@ export default {
                         All the basics for businesses that are just getting started.
                     </p>
                     <ul>
-                        <li>
+                        <li v-for="(el, i) in store.listRates" :key="i">
                             <i class="fa-regular fa-circle-check"></i>
-                            Full Access
-                        </li>
-                        <li>
-                            <i class="fa-regular fa-circle-check"></i>
-                            Enhanced Security
-                        </li>
-                        <li>
-                            <i class="fa-regular fa-circle-check"></i>
-                            Source Files
-                        </li>
-                        <li>
-                            <i class="fa-regular fa-circle-check"></i>
-                            1 Domain free
-                        </li>
-                        <li>
-                            <i class="fa-regular fa-circle-check"></i>
-                            Enhanced Security
+                            {{ el }}
                         </li>
                     </ul>
                     <div class="content-btn">

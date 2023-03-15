@@ -9,6 +9,13 @@ const store = reactive({
         shopify: '/land/img/shopify.svg',
         spotify: '/land/img/spotify.svg',
     },
+    listRates: [
+        'Full Access',
+        'Enhanced Security',
+        'Source Files',
+        '1 Domain free',
+        'Enhanced Security',
+    ]
 
 
 })
