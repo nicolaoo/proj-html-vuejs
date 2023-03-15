@@ -302,19 +302,21 @@ export default {
 
 }
 
+.btn-buy {
+    padding: 8px;
+    margin: 12px 0;
+    background-color: $text-purple;
+    color: white;
+    border-radius: 6px;
+    flex-grow: 1;
+}
+
 .content-btn {
 
     display: flex;
     justify-content: stretch;
 
-    .btn-buy {
-        padding: 8px;
-        margin: 12px 0;
-        background-color: $text-purple;
-        color: white;
-        border-radius: 6px;
-        flex-grow: 1;
-    }
+
 }
 
 .row-mail {
