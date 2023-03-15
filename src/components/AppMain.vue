@@ -20,7 +20,13 @@ export default {
 
 <template>
     <section class="development">
+
         <div class="bg-grey-dev">
+            <button>
+                <a href="#">
+                    <i class="chevron-btn fa-solid fa-chevron-up"></i>
+                </a>
+            </button>
             <div class="container">
                 <div class="develop-doc">
                     <div class="document">
@@ -78,6 +84,18 @@ export default {
 
 .rates-developer {
     padding: 50px 0;
+}
+
+.chevron-btn {
+    padding: 10px;
+    position: fixed;
+    bottom: 20px;
+    right: 35px;
+    background-color: $text-purple;
+    aspect-ratio: 1/1;
+    line-height: 12px;
+    color: white;
+    border-radius: 5px;
 }
 
 .bg-grey-dev {
@@ -150,6 +168,10 @@ export default {
         .start-btn {
             background-color: $text-purple;
             color: white;
+
+            &:hover {
+                opacity: 0.8;
+            }
         }
 
         .doc-btn {
@@ -157,6 +179,12 @@ export default {
             color: $text-purple;
             border: 1px solid $text-purple;
             margin-left: 15px;
+
+            &:hover {
+                background-color: $text-purple;
+                color: white;
+                opacity: 0.8;
+            }
         }
     }
 }

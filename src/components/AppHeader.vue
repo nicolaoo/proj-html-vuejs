@@ -84,6 +84,10 @@ header {
       color: grey;
       font-weight: 800;
 
+      li:hover {
+        opacity: 0.5;
+      }
+
       span {
         font-size: 8px;
       }
@@ -106,6 +110,11 @@ header {
     margin: 0px 5px;
     background-color: $bg-icon-head;
     color: $text-bg-purple;
+
+    &:hover {
+      background-color: $text-purple;
+      color: white;
+    }
   }
 
 

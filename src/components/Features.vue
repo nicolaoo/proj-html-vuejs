@@ -167,6 +167,10 @@ export default {
             border: 3px solid $sfondo-bg;
             padding: 20px;
 
+            &:hover {
+                padding: 25px;
+            }
+
             h5 {
                 margin: 15px 0;
             }
@@ -257,12 +261,18 @@ export default {
 
         .choose_btn {
             border: 1px solid rgb(33, 33, 33);
-            border-radius: 6px;
+            border-radius: 7px;
 
             button {
                 background-color: rgb(25, 25, 25);
                 padding: 10px 50px;
                 color: $text-grey-light ;
+
+                &:hover {
+                    opacity: 0.8;
+                    background-color: rgb(0, 0, 0);
+                    color: white;
+                }
             }
 
             .active {

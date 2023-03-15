@@ -206,6 +206,11 @@ export default {
     border-radius: 10px;
     box-shadow: 0 1px $text-grey;
 
+    &:hover {
+        padding: 20px;
+        transition: 0.5s linear;
+    }
+
     .level-rates {
         padding: 7px 15px;
         background-color: $bg-icon-head;

@@ -214,6 +214,10 @@ footer {
             font-size: 10px;
             padding-right: 5px;
             color: $text-grey-light;
+
+            &:hover {
+                color: white;
+            }
         }
 
         h4 {
@@ -223,6 +227,10 @@ footer {
         a {
             font-size: 12px;
             color: $text-grey-light;
+
+            &:hover {
+                color: white;
+            }
         }
     }
 }
@@ -237,6 +245,10 @@ footer {
             font-size: 10px;
             padding-right: 5px;
             color: $text-grey-light;
+
+            &:hover {
+                color: white;
+            }
         }
 
         h4 {
@@ -246,6 +258,10 @@ footer {
         a {
             font-size: 12px;
             color: $text-grey-light;
+
+            &:hover {
+                color: white;
+            }
         }
     }
 }
@@ -295,6 +311,11 @@ footer {
             padding: 10px 0;
             font-weight: 600;
             box-shadow: 0px 2px #2D4FBF;
+
+            &:hover {
+                padding: 12px;
+                transition: 0.5s linear;
+            }
         }
     }
 }
@@ -321,6 +342,13 @@ footer {
             line-height: 20px;
             aspect-ratio: 3/2;
             font-size: 15px;
+
+            &:hover {
+                opacity: 0.7;
+                padding: 9px 11px;
+                transition: 0.2s linear;
+            }
+
         }
     }
 }

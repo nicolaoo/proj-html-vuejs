@@ -108,6 +108,10 @@ export default {
         border-radius: 5px;
         text-transform: capitalize;
 
+        &:hover {
+            opacity: 0.8;
+        }
+
         i {
             font-size: 10px;
             text-align: center;
