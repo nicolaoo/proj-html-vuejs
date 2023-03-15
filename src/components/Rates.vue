@@ -69,6 +69,9 @@ export default {
                         <button class="btn-buy">
                             Buy Now
                         </button>
+                        <p>
+                            *No credit card required
+                        </p>
                     </div>
                 </div>
 
@@ -119,6 +122,9 @@ export default {
                         <button class="btn-buy">
                             Buy Now
                         </button>
+                        <p>
+                            *No credit card required
+                        </p>
                     </div>
                 </div>
 
@@ -165,6 +171,9 @@ export default {
                         <button class="btn-buy">
                             Buy Now
                         </button>
+                        <p>
+                            *No credit card required
+                        </p>
                     </div>
                 </div>
             </div>
@@ -172,8 +181,7 @@ export default {
 
         <div class="row-mail">
             <h3>
-                Our rates for developer from landrik team
-
+                Want to be among the first to find out?
             </h3>
             <p>
                 Start working with <a href="#">Landrik</a> that can provide everything you need
@@ -242,7 +250,7 @@ export default {
 
 .card {
     border: 2px solid $sfondo-bg;
-    padding: 20px;
+    padding: 10px 20px;
     border-radius: 10px;
     box-shadow: 0 1px $text-grey;
 
@@ -312,10 +320,9 @@ export default {
 }
 
 .content-btn {
-
     display: flex;
     justify-content: stretch;
-
+    flex-direction: column;
 
 }
 
