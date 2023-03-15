@@ -184,8 +184,7 @@ export default {
 footer {
     background-color: $bg-footer;
 
-    .contact,
-    .nav-footer {
+    .contact {
         padding: 50px 20px;
 
     }
@@ -326,7 +325,31 @@ footer {
     }
 }
 
+.row-bottom-foot {
+    display: flex;
+    justify-content: space-between;
+
+    .col {
+        color: $text-grey-light;
+        font-size: 12px;
+
+        .fa-heart {
+            color: red;
+        }
+    }
+
+    ul {
+        display: flex;
+        gap: 5px;
+
+        li {
+            flex-basis: 10%;
+        }
+    }
+}
+
 .nav-footer {
+    padding: 30px 0;
     border-top: 1px solid #52525268;
 }
 </style>
