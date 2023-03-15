@@ -24,12 +24,44 @@ export default {
             <div class="grid">
 
                 <div class="card">
-                    <span><i class="fa-solid fa-maximize"></i></span>
-                    <h5>Scalable</h5>
+                    <span>
+                        <img src="/land/img/icon-modular.svg" alt="">
+                    </span>
+                    <h5>Modular</h5>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Iure enim consequatur fugiat exercitationem dicta illo
-                        voluptatum harum perspiciatis velit rerum.
+                        Composed in a pseudo-Latin language which more or less
+                        corresponds.
+                    </p>
+                    <a href="#">
+                        Read More
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                </div>
+
+                <div class="card">
+                    <span>
+                        <img src="/land/img/icon-resp.svg" alt="">
+                    </span>
+                    <h5>Responsive</h5>
+                    <p>
+                        Composed in a pseudo-Latin language which more or less
+                        corresponds.
+
+                    </p>
+                    <a href="#">
+                        Read More
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                </div>
+
+                <div class="card">
+                    <span>
+                        <img src="/land/img/icon-custom.svg" alt="">
+                    </span>
+                    <h5>Customizable</h5>
+                    <p>
+                        Composed in a pseudo-Latin language which more or less
+                        corresponds.
 
                     </p>
                     <a href="#">
@@ -42,39 +74,8 @@ export default {
                     <span><i class="fa-solid fa-maximize"></i></span>
                     <h5>Scalable</h5>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Iure enim consequatur fugiat exercitationem dicta illo
-                        voluptatum harum perspiciatis velit rerum.
-
-                    </p>
-                    <a href="#">
-                        Read More
-                        <i class="fa-solid fa-chevron-right"></i>
-                    </a>
-                </div>
-
-                <div class="card">
-                    <span><i class="fa-solid fa-maximize"></i></span>
-                    <h5>Scalable</h5>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Iure enim consequatur fugiat exercitationem dicta illo
-                        voluptatum harum perspiciatis velit rerum.
-
-                    </p>
-                    <a href="#">
-                        Read More
-                        <i class="fa-solid fa-chevron-right"></i>
-                    </a>
-                </div>
-
-                <div class="card">
-                    <span><i class="fa-solid fa-maximize"></i></span>
-                    <h5>Scalable</h5>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Iure enim consequatur fugiat exercitationem dicta illo
-                        voluptatum harum perspiciatis velit rerum.
+                        Composed in a pseudo-Latin language which more or less
+                        corresponds.
 
                     </p>
                     <a href="#">
@@ -173,6 +174,16 @@ export default {
             p {
                 color: $text-grey;
                 padding-bottom: 15px;
+            }
+
+            img {
+
+                padding: 10px;
+                border-radius: 5px;
+                background-color: $bg-icon-head;
+                color: $text-purple;
+                width: 45px;
+
             }
 
             i {

@@ -29,8 +29,8 @@ export default {
                         </button>
                         <h1>A Complete Developer Toolste</h1>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, quos.
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, et.
+                            Launch your campaign and benefit from our expertise on designing
+                            and managing conversion centered bootstrap4 html page.
 
                         </p>
                         <span>
