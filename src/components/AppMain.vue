@@ -118,6 +118,11 @@ export default {
 
     img {
         padding: 40px;
+
+        &:hover {
+            background-color: $text-purple;
+            opacity: 0.2;
+        }
     }
 }
 

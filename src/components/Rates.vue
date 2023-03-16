@@ -207,8 +207,9 @@ export default {
     box-shadow: 0 1px $text-grey;
 
     &:hover {
-        padding: 20px;
-        transition: 0.5s linear;
+        transform: scale(1.1, 1.1);
+        transition: 0.5s ease-in-out;
+
     }
 
     .level-rates {
