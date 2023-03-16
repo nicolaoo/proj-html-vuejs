@@ -129,7 +129,7 @@ export default {
 .develop-doc {
     display: flex;
     align-items: center;
-    padding: 100px 0;
+    padding: 50px 0;
     gap: 100px;
 
 
