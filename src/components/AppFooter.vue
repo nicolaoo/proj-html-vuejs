@@ -281,10 +281,12 @@ footer {
 
         p {
             color: $text-grey-light;
+            display: flex;
 
             span {
                 color: rgb(252, 71, 71);
                 font-size: 5px;
+                padding: 6px 5px;
             }
         }
 
@@ -363,6 +365,7 @@ footer {
 
         .fa-heart {
             color: red;
+            padding: 0 5px;
         }
     }
 

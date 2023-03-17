@@ -2,8 +2,12 @@
 export default {
   data() {
     return {
+      dropDown: false,
 
     }
+  },
+  methods: {
+
   }
 }
 
@@ -21,12 +25,14 @@ export default {
         <div class="list-head">
           <ul>
             <li>Home</li>
-            <li class="active">
-              Landing
+            <select class="active">
+              <option value="">Landing</option>
+              <option value=""></option>
+              <option value=""></option>
               <span>
                 <i class="fa-solid fa-chevron-down"></i>
               </span>
-            </li>
+            </select>
             <li>
               Pagies
               <span>
@@ -62,6 +68,7 @@ header {
   background-color: $sfondo-bg;
 }
 
+
 .head {
   display: flex;
   justify-content: space-between;
@@ -75,6 +82,10 @@ header {
   .list-head {
     flex-direction: row;
 
+    .display {
+      display: none;
+    }
+
     ul {
       display: flex;
       gap: 20px;
@@ -84,8 +95,11 @@ header {
       color: grey;
       font-weight: 800;
 
-      li:hover {
-        opacity: 0.5;
+      li {
+
+        &:hover {
+          opacity: 0.5;
+        }
       }
 
       span {
@@ -94,6 +108,12 @@ header {
 
       .active {
         color: $text-bg-purple;
+        border: 0;
+        background-color: $sfondo-bg;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 700;
+
       }
     }
   }
